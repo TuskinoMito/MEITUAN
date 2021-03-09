@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  /* height: 100%; */
+}
+
+.header {
+  height: 1.01rem;
+  background-image: linear-gradient(135deg, #ffd000 0%, #ffbd00 100%);
+  font-size: 0.32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header .back {
+  width: 1.7rem;
+  padding-left: 0.3rem;
+}
+
+.header .back img {
+  width: 0.2rem;
+  height: 0.36rem;
+}
+
+.header .my {
+  color: #222;
+  text-align: center;
+  line-height: 1.01rem;
+  flex-grow: 1;
+}
+
+.header .icons {
+  width: 1.7rem;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+.header .icons img:nth-child(1) {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+
+.header .icons img:nth-child(2) {
+  width: 0.48rem;
+  height: 0.48rem;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+  position: relative;
+  top: 0.08rem;
+}
+
+.content {
+  background-color: #fff;
+  /* margin-top: 0.2rem; */
+  height: calc(100vh - 5.21rem);
+  min-height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow-y: scroll;
+}
+
+.content .left {
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  font-weight: bold;
+  width: 1.2rem;
+  text-align: center;
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+}
+
+.content .left p {
+  margin: 0.6rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.content .left p:nth-child(1) {
+  margin-top: 0.2rem;
+}
+
+.content .right {
+  /* height: 120vh; */
+  width: calc(100% - 1.2rem);
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-left: 1.2rem;
+  background-color: #eee;
+}
+
+.section {
+  font-size: 0.32rem;
+  margin-bottom: 0.4rem;
+  background-color: #fff;
+}
+
+.section .title {
+  padding-left: 0.4rem;
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.section .contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.section .contain p {
+  text-align: center;
+  flex-basis: 33.33%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+
+.set {
+  height: 1rem;
+  background-color: #fff;
+}
+
+.bottom {
+  background-color: #fff;
+  padding-bottom: 0.4rem;
+  border-top: 1px solid #999;
+}
+
+.login-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.2rem;
+}
+
+.login-location .userlogin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 0.2rem;
+}
+
+.login-location .userlogin a {
+  text-decoration: none;
+  font-size: 0.26rem;
+  color: #000;
+  background: linear-gradient(135deg, #ffd000 0, #ffbd00 100%);
+  border-radius: 5px;
+  padding: 0.1rem 0.2rem;
+  margin: 0 0.2rem;
+}
+
+.login-location .userlocation {
+  font-size: 0.26rem;
+  margin-left: 0.4rem;
+}
+
+.login-location .userlocation span:nth-child(1) {
+  color: #999;
+}
+
+.login-location .userlocation img {
+  width: 0.14rem;
+}
+
+.select {
+  color: #fe8c00;
+  font-size: 0.22rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+.select p {
+  text-align: center;
+  padding: 0 0.4rem;
+}
+
+.select p:not(.last) {
+  border-right: 0.03rem solid #333;
+}
+
+.bottomlink {
+  font-size: 0.22rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0 0.3rem;
+}
+
+.bottomlink p:nth-child(1) {
+  width: 1.2rem;
+}
+
+.bottomlink p {
+  width: 1.4rem;
+  text-align: center;
+  margin: 0.1rem 0;
+}
+
+.bottomlink p:nth-child(6),
+.bottomlink p:nth-child(7) {
+  width: 1.8rem;
+}
+
+.bottomlink p:nth-child(8),
+.bottomlink p:nth-child(9) {
+  width: 2.3rem;
+}
+
+.copyright {
+  font-size: 0.22rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
+  color: #999;
+}
+
+.copyright > span {
+  position: relative;
+}
+
+.copyright > span::before {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  right: 3.6rem;
+  top: 0.15rem;
+}
+
+.copyright > span::after {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  right: -1.5rem;
+  top: 0.15rem;
+}
+
+.active {
+  color: #fe8c00;
+}

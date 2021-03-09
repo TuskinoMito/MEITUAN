@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+.header {
+  height: 1.01rem;
+  background-image: linear-gradient(135deg, #ffd000 0%, #ffbd00 100%);
+  font-size: 0.32rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .back {
+  width: 1.7rem;
+  padding-left: 0.3rem;
+}
+
+.header .back img {
+  width: 0.2rem;
+  height: 0.36rem;
+}
+
+.header .my {
+  color: #222;
+  text-align: center;
+  line-height: 1.01rem;
+  flex-grow: 1;
+}
+
+.header .icons {
+  width: 1.7rem;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+.header .icons img:nth-child(1) {
+  width: 0.36rem;
+  height: 0.36rem;
+}
+
+.header .icons img:nth-child(2) {
+  width: 0.48rem;
+  height: 0.48rem;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+  position: relative;
+  top: 0.08rem;
+}
+
+.userinfo {
+  position: relative;
+  font-size: 0.28rem;
+  color: #333;
+  background: -webkit-linear-gradient(top, #e1dace, #dfc8b4);
+  border-bottom: 1px solid #c0bbb2;
+  display: block;
+  height: 1.6rem;
+  padding-right: 0.2rem;
+}
+
+.userinfo .avt {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.userinfo .bgc {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.userinfo .info {
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  padding: 0.28rem 0.2rem;
+  margin-right: 0.2rem;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  font-size: 0.24rem;
+  color: #666;
+}
+
+.userinfo .info span {
+  display: block;
+}
+
+.userinfo .info span:nth-child(1) {
+  font-size: 0.3rem;
+  color: #333;
+  margin-top: 0.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.userinfo .info strong {
+  color: #ff9712;
+  font-weight: normal;
+}
+
+.userinfo .info::after {
+  position: absolute;
+  right: 0.05rem;
+  top: 50%;
+  display: block;
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  border-left: 0.04rem solid #999;
+  border-bottom: 0.04rem solid #999;
+  transform: translateY(-50%) scaleY(1.2) rotateZ(-135deg);
+}
+
+.list {
+  font-size: 0.28rem;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+
+.list .up {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.28rem 0.2rem;
+  position: relative;
+  border-bottom: 1px solid #999;
+}
+
+.list .up::after {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  display: block;
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  transform: translateY(-50%) scaleY(0.7) rotateZ(-135deg);
+  border-left: 0.04rem solid #999;
+  border-bottom: 0.04rem solid #999;
+}
+
+.list .up img {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.list .down {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list .down div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.28rem 0;
+}
+
+.list .down img {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.contain {
+  font-size: 0.28rem;
+  background-color: #fff;
+  margin-top: 0.2rem;
+}
+
+.contain .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.28rem 0.2rem;
+  position: relative;
+  border-bottom: 1px solid #999;
+}
+
+.contain .content::after {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  display: block;
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  transform: translateY(-50%) scaleY(0.7) rotateZ(-135deg);
+  border-left: 0.04rem solid #999;
+  border-bottom: 0.04rem solid #999;
+}
+
+.contain .content img {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.25rem;
+}
+
+.bottom {
+  background-color: #fff;
+  padding-bottom: 0.4rem;
+}
+
+.login-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.2rem;
+}
+
+.login-location .userlogin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 0.2rem;
+}
+
+.login-location .userlogin a {
+  text-decoration: none;
+  font-size: 0.26rem;
+  color: #000;
+  background: linear-gradient(135deg, #ffd000 0, #ffbd00 100%);
+  border-radius: 5px;
+  padding: 0.1rem 0.2rem;
+  margin: 0 0.2rem;
+}
+
+.login-location .userlocation {
+  font-size: 0.26rem;
+  margin-left: 0.4rem;
+}
+
+.login-location .userlocation span:nth-child(1) {
+  color: #999;
+}
+
+.login-location .userlocation img {
+  width: 0.14rem;
+}
+
+.select {
+  color: #fe8c00;
+  font-size: 0.22rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.4rem 0;
+}
+
+.select p {
+  text-align: center;
+  padding: 0 0.4rem;
+}
+
+.select p:not(.last) {
+  border-right: 0.03rem solid #333;
+}
+
+.bottomlink {
+  font-size: 0.22rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 0 0.3rem;
+}
+
+.bottomlink p:nth-child(1) {
+  width: 1.2rem;
+}
+
+.bottomlink p {
+  width: 1.4rem;
+  text-align: center;
+  margin: 0.1rem 0;
+}
+
+.bottomlink p:nth-child(6),
+.bottomlink p:nth-child(7) {
+  width: 1.8rem;
+}
+
+.bottomlink p:nth-child(8),
+.bottomlink p:nth-child(9) {
+  width: 2.3rem;
+}
+
+.copyright {
+  font-size: 0.22rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  padding-top: 0.2rem;
+  color: #999;
+}
+
+.copyright > span {
+  position: relative;
+}
+
+.copyright > span::before {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  right: 3.6rem;
+  top: 0.15rem;
+}
+
+.copyright > span::after {
+  content: "";
+  display: block;
+  width: 1.4rem;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.486);
+  position: absolute;
+  right: -1.5rem;
+  top: 0.15rem;
+}
